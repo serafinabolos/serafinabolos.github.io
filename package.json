@@ -1,0 +1,19 @@
+{
+  "name": "gulp-base",
+  "version": "1.0.0",
+  "description": "workspace front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipe Teixeira",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "gulp": "^3.9.1",    
+    "gulp-sass": "^2.3.2",    
+    "gulp-sourcemaps": "^2.2.0",    
+    "gulp-uglify": "^2.0.0",
+    "pump": "^1.0.1"
+  }
+}

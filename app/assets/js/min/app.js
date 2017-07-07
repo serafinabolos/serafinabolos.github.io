@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#responsive-menu").click(function(e){console.log("cliquei"),e.preventDefault(),$("#myTopnav").is(".topnav.responsive")?$("#myTopnav").removeClass("responsive"):$("#myTopnav").attr("class","topnav responsive")})});
