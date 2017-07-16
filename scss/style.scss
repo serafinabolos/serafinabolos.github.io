@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 /* latin */
 @font-face {
-  font-family: 'Lobster';
+  font-family: 'Merienda';
   font-style: normal;
   font-weight: 400;
-  src: local('Lobster'), local('Lobster-Regular'), url('../fonts/Lobster/lobster.woff2') format('woff2');
+  src: local('Merienda'), local('Merienda-Regular_0_wt'), url(https://fonts.gstatic.com/s/merienda/v4/jzdtQ30m6V77-C5vjVpEXPesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
@@ -16,9 +15,6 @@
   src: local('Fresca-Regular'), url('../fonts/Fresca/fresca.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-=======
-@import url('https://fonts.googleapis.com/css?family=Fresca|Lobster');
->>>>>>> 20b160dcec83e76cf16c3291730c0b0b31d41a99
 
 @import "helpers/common";
 @import "helpers/colors";
@@ -31,7 +27,7 @@
 
 
 h1,h2,h3{
-    font-family: 'Lobster', cursive;
+    font-family: 'Merienda', cursive;
 }
 
 p, a, span, li, button {
