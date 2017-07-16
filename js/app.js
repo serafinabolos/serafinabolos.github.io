@@ -19,13 +19,9 @@ $('.owl-carousel').owlCarousel({
       items: 5
     }
   }
-<<<<<<< HEAD
 });
 
 $(function() {
     var altura = window.innerHeight;
     $(".header").css('min-height', altura);
 });
-=======
-})
->>>>>>> 20b160dcec83e76cf16c3291730c0b0b31d41a99
