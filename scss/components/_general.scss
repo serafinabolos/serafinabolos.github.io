@@ -1,0 +1,213 @@
+.header{
+    background-image: url('../img/header-bolo-pote.png');
+    background-position: center;
+    background-size: cover;
+    border-bottom: 5px solid $purple;
+
+    
+    .header-title {
+        color: #fff;
+        font-size: 2.3em;
+        padding : 50px 0 15px 0;
+    }
+    
+    .header-subtitle { 
+        color : #fff;
+        font-family: 'Fresca', sans-serif;
+        font-size: 1.4em;
+
+        .header-telefone {
+            font-weight: bold;
+            color: #E91E63;
+        }
+    }
+
+    .header-button {
+        border-radius: 0;
+        @include button(#731a3a);
+        font-size: 1.3em;
+        height: 60px;
+        margin: 25px 0;
+        width: 60%;
+    }
+    
+}
+
+.products {
+
+    .products-title {
+        font-size: 2em;
+        margin: 36px 0;
+        text-align: center;
+    }
+    .products-img {
+        width: 100%;
+    }
+
+    .products-subtitle {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 18px 0;
+        text-align: center;
+    }
+
+    .products-value {
+        font-size: 1.3em;
+    }
+
+    .products-description {
+        font-size: 1.2em;
+    }
+
+    .products-button { 
+        font-size: 1.2em;
+        width: 100%;
+    }
+}
+
+.carousel { 
+    
+    .carousel-title{
+        font-size: 2em;
+        text-align: center;
+    }    
+}
+
+@media (min-width: 768px) {
+    .header{
+
+        .col-xs-12 {
+            transform: translateY(20%);
+        }
+       
+        .header-title {
+            font-size: 3em;
+            width: 60%;
+        }
+        
+        .header-subtitle { 
+            font-size: 2em;
+            width: 60%;
+        }
+
+        .header-button {
+            font-size: 1.5em;
+            width: 60%;
+        }
+        
+    }
+
+    .products {
+        .products-title {
+            font-size: 3em;
+        }
+        .products-img {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        .products-subtitle {
+            font-size: 2em;
+        }
+
+        .products-value {
+            font-size: 1.6em;
+        }
+
+        .products-description {
+            font-size: 1.5em;
+        }
+
+        .products-button { 
+            @include border-radius(0);
+            font-size: 1.5em;
+            display: block;
+            height: 60px;
+            margin: 40px auto 20px;
+            width: 300px;
+        }
+
+    }
+
+    .carousel { 
+    
+        .carousel-title{
+            font-size: 3em;
+        }    
+    }
+
+}
+
+@media (min-width: 1024px){
+    .header{
+
+        .col-xs-12 { 
+            padding-left: 10%;
+            transform: translateY(20%);
+        }
+
+        .header-title {
+            width: 35%;
+        }
+        
+        .header-subtitle { 
+            font-size: 1.4em;
+            padding: 15px 0;
+            width: 32%;
+        }
+
+        .header-button {
+            width: 30%;
+        }
+        
+    }
+
+    .products {
+        .products-title {
+            font-size: 3em;
+            margin: 36px 0;
+            text-align: center;
+        }
+        .products-img {
+            width: 65%;
+        }
+
+        .products-subtitle {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 18px 0;
+            text-align: left;
+        }
+
+        .products-value {
+            font-size: 1.3em;
+        }
+
+        .products-description {
+            font-size: 1.2em;
+        }
+
+        .products-button { 
+            @include box-shadow(1px 1px 10px 1px rgba(0, 0, 0, 0.7));
+            margin : 40px 0 20px;
+            font-size: 1.2em;
+            width: 80%;
+
+        }
+
+        .text-right { 
+            text-align: right;
+        }
+
+        .img-right {
+            float: right;
+        }
+
+        .img-left {
+            float: left;
+        }
+
+    }
+
+}

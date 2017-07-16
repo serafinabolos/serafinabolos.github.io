@@ -1,0 +1,45 @@
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin transition($x, $y) {
+	-webkit-transition: $x $y;
+	-moz-transition: $x $y;
+	-ms-transition: $x $y;
+	-o-transition: $x $y;
+	transition: $x $y;
+}
+
+@mixin box-shadow($shadow...) {
+   -webkit-box-shadow: $shadow;
+   box-shadow: $shadow;
+}
+
+@mixin button($color: #000, $text_color: $white) {
+  background: $color;
+  border: solid 1px $color;
+  @include border-radius(0);
+  color: $text_color !important;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  @include box-shadow(1px 1px 1px 1px rgba(0, 0, 0, 0.5));
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    background: saturate($color, 10%);
+    }
+
+  &:active {
+    position: relative;
+    top: 1px;
+    color: saturate($color, 15%);
+   }
+}

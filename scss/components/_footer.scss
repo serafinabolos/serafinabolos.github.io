@@ -1,0 +1,114 @@
+footer {
+    background-color: $pink;
+    margin: 36px 0 0 0;
+    border-top: 4px solid $purple;
+
+    .footer-img{
+        display: block;
+        margin: auto;
+        padding : 10px;
+        width: 150px;
+    }
+    p { 
+        color : $white;
+    }
+    .footer-title { 
+        font-family: 'Lobster', cursive;
+        font-size: 2.3em;
+        padding: 18px 0 0 0;
+    }
+
+    .footer-subtitle {
+        font-size : 1.8em;
+    }
+    .footer-contact {
+        margin : 0 0 36px 0;
+        .footer-address, .footer-tel {
+            font-size: 1.2em;
+            margin: 0;
+            padding : 0 0 0 20px;
+
+        }
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-subtitle-social{
+        font-size : 1.8em;
+        display: none;
+    }
+    .footer-social{
+        text-align: center;
+    }
+    .icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        stroke-width: 0;
+        stroke: $white;
+        fill: $white;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+
+        .footer-contact {
+            margin : 0 0 36px 0;
+            padding: 18px 0 0 0;
+            .footer-address, .footer-tel {
+                font-size: 1.2em;
+                margin: 0;
+                padding : 0 0 0 20px;
+
+            }
+        }
+
+        .footer-subtitle-social{
+            font-size : 1.8em;
+            display: none;
+        }
+        .footer-social{
+            text-align: center;
+        }
+        .icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            stroke-width: 0;
+            stroke: $white;
+            fill: $white;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+
+        .footer-logo { 
+            display: block;
+            margin : 0;
+            padding: 18px 0 0 0;
+            
+            img {
+                float: right;
+                width: 200px;
+            }
+        }
+
+        .footer-social{
+            margin : 0 0 36px 0;
+            padding: 18px 0 0 0;
+            text-align: center;
+        }
+        .icon {
+            @include transition(linear, .3s);
+            &:hover{
+                fill : $purple;
+            }
+
+        }
+    }
+}
