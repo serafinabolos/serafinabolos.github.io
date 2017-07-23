@@ -109,10 +109,12 @@
 
         .products-subtitle {
             font-size: 2em;
+            text-align: center;
         }
 
         .products-value {
             font-size: 1.6em;
+            text-align: center;    
         }
 
         .products-description {
@@ -126,6 +128,10 @@
             height: 60px;
             margin: 40px auto 20px;
             width: 300px;
+        }
+
+        .text-right {
+            text-align: left;
         }
 
     }
@@ -199,6 +205,10 @@
         .text-right { 
             text-align: right;
         }
+        
+        .text-left{
+            text-align: left;
+        }
 
         .img-right {
             float: right;
@@ -207,6 +217,8 @@
         .img-left {
             float: left;
         }
+
+        
 
     }
 
